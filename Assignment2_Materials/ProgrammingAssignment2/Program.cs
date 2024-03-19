@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Mail;
 using LinkedLists;
 
 namespace ProgrammingAssignment2
@@ -33,6 +34,37 @@ namespace ProgrammingAssignment2
 				// and the comment below. You can of
 				// course add more space between the
 				// comments as needed
+
+				int value = 0;				
+				int sum = 0;
+				int count = 0;
+				float average = 0;
+
+				// Start of While Loop
+				while (value != -1)
+				{
+					// Get Value
+					value = GetValue();
+					// Add the vaule to the sum
+					sum = sum + value;
+					// Add 1 to count
+                    count++;
+
+
+
+					
+                }
+
+				// -1 to count to account for the -1
+				count = count - 1;
+				// +1 to sum to account for the -1
+				sum = sum + 1;
+				
+				// Write out the count and average
+				average = (float) sum / count;
+				Console.WriteLine(count + " " + average);
+				
+
 
 
 
