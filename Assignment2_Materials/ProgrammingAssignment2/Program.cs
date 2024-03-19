@@ -40,10 +40,14 @@ namespace ProgrammingAssignment2
 				int count = 0;
 				float average = 0;
 
+				// Start of While Loop
 				while (value != -1)
 				{
-					value = GetValue();					
+					// Get Value
+					value = GetValue();
+					// Add the vaule to the sum
 					sum = sum + value;
+					// Add 1 to count
                     count++;
 
 
@@ -51,9 +55,12 @@ namespace ProgrammingAssignment2
 					
                 }
 
+				// -1 to count to account for the -1
 				count = count - 1;
+				// +1 to sum to account for the -1
 				sum = sum + 1;
 				
+				// Write out the count and average
 				average = (float) sum / count;
 				Console.WriteLine(count + " " + average);
 				
